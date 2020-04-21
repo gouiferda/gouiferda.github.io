@@ -1,2 +1,1 @@
-# gouiferda.github.io
-Personal website
+# Personal website
