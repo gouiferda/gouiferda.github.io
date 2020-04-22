@@ -17,11 +17,11 @@
     {
         "url": "about",
         "title": "About",
-        "content": "Coming soon"
+        "content": "<b>Hi! My name is Soufiane,</b><br><br><div class='row'><div class='col'><img src='assets/img/content/about.jpg' class='rounded'><br><br></div><div class='col'>I started coding 6 years ago, studied computer science, and got my bachelor’s degree in information engineering from Abdelmalek Essaadi University.<br><br>I’ve worked as a freelance web developer.<br><br>I like reading, learning new stuff, building and making useful softwares and electronics, playing music, writing articles and discussions with interesting positive people.</div></div>"
     },
     {
         "url": "contact",
         "title": "Contact",
-        "content": "Coming soon"
+        "content": "Say hello via email: <a class='text-info' href='mailto:soufiane@gouiferda.com'>soufiane@gouiferda.com</a>"
     }
 ]

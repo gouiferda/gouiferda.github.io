@@ -65,21 +65,27 @@ function loadSocialLinks() {
 
 function setPage(pageUrl) {
     readFile("app/data/pages.json", function (text) {
+        if (pageUrl == null) pageUrl = ''
         var data = JSON.parse(text);
         var pageFound = null;
         var currentPage = null;
+        var defaultPage = null;
         for (var i = 0; i < data.length; i++) {
             currentPage = data[i]
+            if (currentPage.url == ''){
+                defaultPage= currentPage;
+            }
             if (pageUrl == currentPage.url) {
                 pageFound = currentPage;
                 break;
             }
-
         }
-        if (!issetObj(pageFound)) return
+        if (!issetObj(defaultPage)) return;
+        if (!issetObj(pageFound)) pageFound = defaultPage
         var title = pageFound.title
         var link = pageFound.url
-        if (pageUrl != '') link = 'index.html?p=' + pageUrl;
+        if (pageUrl != '') {link = 'index.html?p=' + pageUrl}
+        else{ link = 'index.html'}
         contentBlock.innerHTML = getFormatedPageContent(pageFound);
         document.title = title;
         window.history.pushState({

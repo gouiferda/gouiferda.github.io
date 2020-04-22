@@ -8,7 +8,7 @@ var socialLinks = document.getElementById('socialLinks');
 
 //get page url from outside
 var pageGet = findGetParameter('p')
-if(issetObj(pageGet)) setPage(pageGet)
+setPage(pageGet)
 
 //load menues
 loadMenus();
