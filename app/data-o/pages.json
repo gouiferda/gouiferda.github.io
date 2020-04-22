@@ -2,26 +2,26 @@
     {
         "url": "",
         "title": "Blog",
-        "content": "Coming soon"
+        "content": "Blog posts here"
     },
     {
         "url": "projects",
         "title": "Projects",
-        "content": "Coming soon"
+        "content": "projects here"
     },
     {
         "url": "services",
         "title": "Services",
-        "content": "Coming soon"
+        "content": "Services here"
     },
     {
         "url": "about",
         "title": "About",
-        "content": "Coming soon"
+        "content": "About here"
     },
     {
         "url": "contact",
         "title": "Contact",
-        "content": "Coming soon"
+        "content": "Contact here"
     }
 ]

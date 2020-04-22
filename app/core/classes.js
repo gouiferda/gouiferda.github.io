@@ -1,4 +1,11 @@
 
+class NavItem {
+  constructor(url, title) {
+    this.url = url;
+    this.title = title;
+  }
+}
+
 class Page {
   constructor(url, title, content) {
     this.url = url;

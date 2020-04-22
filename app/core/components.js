@@ -23,3 +23,14 @@ function getSinglePostMin(post) {
     );
     return contentText;
 }
+
+function getFormatedPageContent(pageFound){
+    var contentText = '';
+    contentText += getBlock('pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center',
+        getBlock('display-5',
+        '<h1 class="display-5">'+pageFound.title+'</h1>'+
+        ' <p class="lead">'+pageFound.content+'</p>'
+        )
+    );
+    return contentText;
+}
