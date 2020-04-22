@@ -38,16 +38,32 @@ function loadMenus() {
         var outputPages = '';
         var link = '';
         var page = null;
+        var inr = '';
+        var idElem = '';
         for (var i = 0; i < data.length; i++) {
             page = data[i];
             (page.url != '') ? link = 'index.html?p=' + page.url : link = 'index.html'
-            outputPages += '<li><a class="text-muted link"  onclick=\'setPage("' + page.url + '")\'>' + page.title + '</a></li>';
+            idElem =  (page.url != '') ? page.url : 'home'
+            inr = 'id="' + idElem + '"  onclick=\'setPage("' + page.url + '")\'>' + page.title
+            outputPages += '<li><a class="text-muted link" '+ inr + '</a></li>';
             if (page.url == 'contact') continue;
-            outputNav += '<a class="p-2 text-dark link"  onclick=\'setPage("' + page.url + '")\'>' + page.title + '</a>';
+            outputNav += '<a class="p-2 text-dark link" '+ inr  + '</a>';
         }
         navItems.innerHTML = outputNav;
         pagesLinks.innerHTML = outputPages;
     });
+}
+
+function addClass(el,className)
+{
+    var element = document.getElementById(el.id);
+    element.classList.add(className);
+}
+
+function removeClass(el,className)
+{
+    var element = document.getElementById(el.id);
+    element.classList.remove(className);
 }
 
 function loadSocialLinks() {
