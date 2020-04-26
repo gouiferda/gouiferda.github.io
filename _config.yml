@@ -1,2 +1,3 @@
-#permalink: pretty
-permalink: /index.html?p=:title
+permalink: pretty
+
+#permalink: /index/:title
