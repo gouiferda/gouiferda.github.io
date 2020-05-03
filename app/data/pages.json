@@ -17,7 +17,7 @@
     {
         "url": "about",
         "title": "About",
-        "content": "<b>Hi! My name is Soufiane,</b><br><br><div class='row'><div class='col-12 col-md-4'><img src='assets/img/content/about.jpg' class='img-fluid rounded'><br><br></div><div class='col col-md-8'>I started coding 6 years ago, studied computer science, and got my bachelor’s degree in software engineering from Abdelmalek Essaadi University.<br><br>I’ve worked as a freelance software developer/engineer, providing full-stack solutions for cross platforms (desktop, web and mobile).<br><br>I'm a big Apple geek/fan (iOS, macOS), despite not being a fan of closed ecosystems, but Apple is a special case ..., I like reading, learning new stuff, building and making, [sometimes hacking] all sorts of softwares and electronics that I'm able to understand or think of, writing [mediocre] articles, and having [probably mediocre] discussions with interesting [hopefuly positive] people.</div></div>"
+        "content": "<b>Hi! My name is Soufiane,</b><br><br><div class='row'><div class='col-12 col-md-4'><img src='assets/img/content/about.jpg' class='img-fluid rounded'><br><br></div><div class='col col-md-8'>I started coding 6 years ago, studied computer science, and got my bachelor’s degree in software engineering from Abdelmalek Essaadi University.<br><br>I’ve worked as a freelance web developer, worked on mutiple open projects on all platforms.<br><br>Apple geek, I like learning, building and making new stuff, [sometimes hacking] all sorts of softwares and electronics that I'm able to understand or think of, sometimes I write [hopefully not mediocre] articles, and having discussions with interesting people.</div></div>"
     },
     {
         "url": "contact",
