@@ -17,7 +17,7 @@
     {
         "url": "about",
         "title": "About",
-        "content": "<b>Hi! My name is Soufiane,</b><br><br><div class='row'>    <div class='col-12 col-md-4'><img src='assets/img/content/about.jpg' class='img-fluid rounded'><br><br></div>    <div class='col col-md-8'>I'm a software and web developer based in Morocco, Agadir.<br><br>        I’ve worked as a freelance web developer, worked on mutiple open projects, on web, mobile and desktop platforms.<br><br>        I like learning, building and making new softwares and electronics, that I'm able to understand or find useful.<br><br>        I like working in teams, and I take in consideration to have an intuitive UI and UX, clean and effecient code and architecture.<br><br>        I sometimes write articles, I like having discussions with interesting people.</div></div>"
+        "content": "<div class='row'>    <div class='col-12 col-md-4'><img src='assets/img/content/about.jpg' class='img-fluid rounded'><br><br></div>    <div class='col col-md-8'>Hi! My name is Soufiane, I'm a software and web developer based in Morocco, Agadir. I’ve worked as a freelance web developer, and worked on many open projects related to computers and electronics.<br><br>        I like learning, building and making new softwares and electronics, that I'm able to understand or find useful. My main goal is to bring value in the best way possible, I like working in teams, and take in consideration the value of an intuitive UI and UX, clean and effecient code and architecture.<br><br>        I sometimes write articles, I like having discussions with interesting people.</div></div>"
     },
     {
         "url": "contact",
