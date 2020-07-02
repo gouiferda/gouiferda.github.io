@@ -1,23 +1,24 @@
 [
+    
     {
         "url": "",
-        "title": "Blog",
-        "content": "Coming soon"
+        "title": "About",
+        "content": "<div class='row'>    <div class='col-12 col-md-4'><img src='assets/img/content/about.jpg' class='img-fluid rounded'><br><br></div>    <div class='col col-md-8'>Hi! My name is Soufiane, I'm a software and web developer based in Morocco, Agadir. I’ve worked as a freelance web developer, and worked on many open projects related to computers and electronics, currently working as a Full Stack developer @<a target='_blank' href='https://crealeet.com'>Crealeet</a><br><br>        I like learning, building and making new softwares and electronics, that I'm able to understand or find useful. My main goal is to bring value in the best way possible, I like working in teams, and take in consideration the value of an intuitive UI and UX, clean and effecient code and architecture.<br><br>        I sometimes write articles, I like having discussions with interesting people.</div></div>"
     },
     {
         "url": "projects",
         "title": "Projects",
-        "content": "Coming soon"
+        "content": "<div class='row'>    <div class='col-12'><h5>Personal / School projects</h5><p><a target='_blank' href='https://github.com/gouiferda?tab=repositories&q=&type=source'>Github</a></p><h5>Freelance projects</h5><p><a target='_blank' href='http://intra.connectinstitute.ma/login.php'>Intra (Educational platform)</a><br><a target='_blank' href='https://bello.ma'>Bello (E-commerce website)</a></p></div> </div> "
     },
     {
         "url": "services",
         "title": "Services",
-        "content": "Coming soon"
+        "content": "<span class='badge badge-pill badge-primary'>Data management</span> <span class='badge badge-pill badge-success'>API development (Backend)</span> <span class='badge badge-pill badge-warning'>Software and Web development (Frontend)</span> <span class='badge badge-pill badge-warning'>Mobile (iOS-Android) development (Frontend)</span> <span class='badge badge-pill badge-secondary'>Electronics development and automation</span> <span class='badge badge-pill badge-danger'>UI/UX</span>"
     },
     {
-        "url": "about",
-        "title": "About",
-        "content": "<div class='row'>    <div class='col-12 col-md-4'><img src='assets/img/content/about.jpg' class='img-fluid rounded'><br><br></div>    <div class='col col-md-8'>Hi! My name is Soufiane, I'm a software and web developer based in Morocco, Agadir. I’ve worked as a freelance web developer, and worked on many open projects related to computers and electronics.<br><br>        I like learning, building and making new softwares and electronics, that I'm able to understand or find useful. My main goal is to bring value in the best way possible, I like working in teams, and take in consideration the value of an intuitive UI and UX, clean and effecient code and architecture.<br><br>        I sometimes write articles, I like having discussions with interesting people.</div></div>"
+        "url": "blog",
+        "title": "Blog",
+        "content": "Coming soon"
     },
     {
         "url": "contact",
