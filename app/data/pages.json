@@ -8,7 +8,7 @@
     {
         "url": "projects",
         "title": "Projects",
-        "content": "<div class='row'>    <div class='col-12'><h5>Personal / School projects</h5><p><a class='text-info' target='_blank' href='https://github.com/gouiferda?tab=repositories&q=&type=source'>Github</a></p><h5>Freelance projects</h5><p><a class='text-info' target='_blank' href='http://intra.connectinstitute.ma/login.php'>Intra (Educational platform)</a><br><a class='text-info' target='_blank' href='https://bello.ma'>Bello (E-commerce website)</a></p></div> </div> "
+        "content": "<div class='row'>    <div class='col-12'><h5>Personal / School projects</h5><p><a class='text-info' target='_blank' href='https://github.com/gouiferda?tab=repositories&q=&type=source'>Github</a></p><h5>Freelance projects</h5><p><a class='text-info' target='_blank' href='http://intra.connectinstitute.ma/login.php'>Intra (Educational platform)</a><br><a class='text-info' target='_blank' href='https://bello.ma'>Bello (E-commerce website)</a><br><a class='text-info' target='_blank' href='https://play.google.com/store/apps/details?id=com.digitalmakersma.baytdakira&hl=en'>Bayt Dakira (Museem App)</a></p></div> </div> "
     },
     {
         "url": "services",
@@ -23,6 +23,6 @@
     {
         "url": "contact",
         "title": "Contact",
-        "content": "Say hello via email: <a class='text-info' href='mailto:soufiane@gouiferda.com'>soufiane@gouiferda.com</a>"
+        "content": "Say hello via email: <a class='text-info' href='mailto:soufiane.dev9@gmail.com'>soufiane.dev9@gmail.com</a>"
     }
 ]
