@@ -13,7 +13,7 @@
     {
         "url": "services",
         "title": "Services",
-        "content": "<span class='badge badge-pill badge-primary'>Data management</span> <span class='badge badge-pill badge-success'>API development (Backend)</span> <span class='badge badge-pill badge-warning'>Software and Web development (Frontend)</span> <span class='badge badge-pill badge-warning'>Mobile (iOS-Android) development (Frontend)</span> <span class='badge badge-pill badge-secondary'>Electronics development and automation</span> <span class='badge badge-pill badge-danger'>UI/UX</span>"
+        "content": "<span class='badge badge-pill badge-success'>Data management</span> <span class='badge badge-pill badge-success'>API development (Backend)</span> <span class='badge badge-pill badge-warning'>Software and Web development (Frontend)</span> <span class='badge badge-pill badge-warning'>Mobile (iOS-Android) development (Frontend)</span> <span class='badge badge-pill badge-primary'>Electronics development and automation</span> <span class='badge badge-pill badge-danger'>UI/UX</span>"
     },
     {
         "url": "blog",
