@@ -44,9 +44,13 @@ function loadMenus() {
             page = data[i];
             (page.url != '') ? link = 'index.html?p=' + page.url : link = 'index.html'
             idElem =  (page.url != '') ? page.url : 'home'
-            inr = 'id="' + idElem + '"  onclick=\'setPage("' + page.url + '")\'>' + page.title
+            inr = 'id="' + idElem + '"  onclick=\'return setPage("' + page.url + '")\'>' + page.title
+            if (page.url == 'blog') continue;
             outputPages += '<li><a class="text-muted link" '+ inr + '</a></li>';
-            if (page.url == 'contact') continue;
+            if (page.url == 'contact'){
+                outputNav += '&nbsp;&nbsp;<a href="#" class="btn btn-outline-dark" '+ inr  + '</a>';
+                continue
+            }
             outputNav += '<a class="p-2 text-dark link" '+ inr  + '</a>';
         }
         navItems.innerHTML = outputNav;
