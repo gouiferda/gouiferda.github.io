@@ -12,7 +12,7 @@ function findGetParameter(parameterName) {
     window.location.search
         .substr(1)
         .split("&")
-        .forEach(function (item) {
+        .forEach(function(item) {
             tmp = item.split("=");
             if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
         });
@@ -23,7 +23,7 @@ function readFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function () {
+    rawFile.onreadystatechange = function() {
         if (rawFile.readyState === 4 && rawFile.status == "200") {
             callback(rawFile.responseText);
         }
@@ -32,7 +32,7 @@ function readFile(file, callback) {
 }
 
 function loadMenus() {
-    readFile("app/data/pages.json", function (text) {
+    readFile("app/data/pages.json", function(text) {
         var data = JSON.parse(text);
         var outputNav = '';
         var outputPages = '';
@@ -40,38 +40,37 @@ function loadMenus() {
         var page = null;
         var inr = '';
         var idElem = '';
+        var skipped_pages = ['blog', 'experience']
         for (var i = 0; i < data.length; i++) {
             page = data[i];
-            (page.url != '') ? link = 'index.html?p=' + page.url : link = 'index.html'
-            idElem =  (page.url != '') ? page.url : 'home'
+            (page.url != '') ? link = 'index.html?p=' + page.url: link = 'index.html'
+            idElem = (page.url != '') ? page.url : 'home'
             inr = 'id="' + idElem + '"  onclick=\'return setPage("' + page.url + '")\'>' + page.title
-            if (page.url == 'blog') continue;
-            outputPages += '<li><a class="text-muted link" '+ inr + '</a></li>';
-            if (page.url == 'contact'){
-                outputNav += '&nbsp;&nbsp;<a href="#" class="btn btn-outline-dark" '+ inr  + '</a>';
+            if (skipped_pages.includes(page.url)) continue;
+            outputPages += '<li><a class="text-muted link" ' + inr + '</a></li>';
+            if (page.url == 'contact') {
+                outputNav += '&nbsp;&nbsp;<a href="#" class="btn btn-outline-dark" ' + inr + '</a>';
                 continue
             }
-            outputNav += '<a class="p-2 text-dark link" '+ inr  + '</a>';
+            outputNav += '<a class="p-2 text-dark link" ' + inr + '</a>';
         }
         navItems.innerHTML = outputNav;
         pagesLinks.innerHTML = outputPages;
     });
 }
 
-function addClass(el,className)
-{
+function addClass(el, className) {
     var element = document.getElementById(el.id);
     element.classList.add(className);
 }
 
-function removeClass(el,className)
-{
+function removeClass(el, className) {
     var element = document.getElementById(el.id);
     element.classList.remove(className);
 }
 
 function loadSocialLinks() {
-    readFile("app/data/social-links.json", function (text) {
+    readFile("app/data/social-links.json", function(text) {
         var data = JSON.parse(text);
         var output = '';
         var link = '';
@@ -84,7 +83,7 @@ function loadSocialLinks() {
 }
 
 function setPage(pageUrl) {
-    readFile("app/data/pages.json", function (text) {
+    readFile("app/data/pages.json", function(text) {
         if (pageUrl == null) pageUrl = ''
         var data = JSON.parse(text);
         var pageFound = null;
@@ -92,8 +91,8 @@ function setPage(pageUrl) {
         var defaultPage = null;
         for (var i = 0; i < data.length; i++) {
             currentPage = data[i]
-            if (currentPage.url == ''){
-                defaultPage= currentPage;
+            if (currentPage.url == '') {
+                defaultPage = currentPage;
             }
             if (pageUrl == currentPage.url) {
                 pageFound = currentPage;
@@ -104,8 +103,7 @@ function setPage(pageUrl) {
         if (!issetObj(pageFound)) pageFound = defaultPage
         var title = pageFound.title
         var link = pageFound.url
-        if (pageUrl != '') {link = 'index.html?p=' + pageUrl}
-        else{ link = 'index.html'}
+        if (pageUrl != '') { link = 'index.html?p=' + pageUrl } else { link = 'index.html' }
         contentBlock.innerHTML = getFormatedPageContent(pageFound);
         document.title = title;
         window.history.pushState({
@@ -115,12 +113,11 @@ function setPage(pageUrl) {
 
 }
 
-window.onpopstate = function(e){
+window.onpopstate = function(e) {
     var pageUrlGotNavig = null
-    if(e.state){
+    if (e.state) {
         pageUrlGotNavig = e.state;
         if (!issetObj(pageUrlGotNavig)) return
         setPage(pageUrlGotNavig.pageUrl)
     }
 };
-
